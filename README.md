@@ -84,15 +84,12 @@ Python 3.8 이상을 설치하세요:
 ### 2. 프로젝트 설정
 ```bash
 # 프로젝트 폴더로 이동
-cd real-estate
+cd .\real-estate\                             
+.\venv311\Scripts\Activate.ps1
 
-# 가상환경 생성 (선택사항)
-python -m venv venv
-venv\Scripts\activate  # Windows
-# source venv/bin/activate  # Mac/Linux
+# 가상환경 실행
+.\venv311\Scripts\Activate.ps1
 
-# 필요한 패키지 설치
-pip install -r requirements.txt
 ```
 
 ### 3. 프로그램 실행
