@@ -1,0 +1,12 @@
+# 네이버 API 설정
+NAVER_CLIENT_ID=your_naver_client_id
+NAVER_CLIENT_SECRET=your_naver_client_secret
+
+# 검색 설정
+DEFAULT_REGION=서울
+DEFAULT_PROPERTY_TYPE=아파트
+DEFAULT_TRADE_TYPE=매매
+
+# 출력 설정
+OUTPUT_DIR=output
+EXCEL_FILENAME=real_estate_data.xlsx 
