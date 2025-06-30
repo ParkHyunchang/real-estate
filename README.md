@@ -81,22 +81,16 @@ Python 3.8 이상을 설치하세요:
 - [Python 공식 사이트](https://www.python.org/downloads/)
 - 설치 시 "Add Python to PATH" 옵션을 체크하세요
 
-### 2. 프로젝트 설정
+### 2. 프로젝트 실행행
 ```bash
 # 프로젝트 폴더로 이동
 cd .\real-estate\                             
-.\venv311\Scripts\Activate.ps1
 
 # 가상환경 실행
 .\venv311\Scripts\Activate.ps1
 
-```
-
-### 3. 프로그램 실행
-
-#### 간단한 테스트 (권장)
-```bash
-python simple_test.py
+# 파이썬 코드 실행
+python check_complex_deals.py
 ```
 
 ## 사용법
