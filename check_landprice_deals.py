@@ -34,8 +34,10 @@ def get_landprice_deals(complex_no, dong_no):
     response = requests.get(url, headers=headers)
     response.raise_for_status()
     data = response.json()
+    print("[DEBUG] 원본 응답 데이터:", data)  # 원본 응답 전체 출력
     results = []
     floors = data.get("landPriceTotal", {}).get("landPriceFloors", [])
+    print("[DEBUG] floors:", floors)  # 파싱된 층 정보 리스트 출력
     for floor_info in floors:
         floor = floor_info.get("floor")
         for price_info in floor_info.get("landPrices", []):
@@ -58,6 +60,7 @@ def get_landprice_deals(complex_no, dong_no):
                 "가격": price,
                 "거래유형": deal_type
             })
+    print("[DEBUG] results:", results)  # 최종 결과 리스트 출력
     return results
 
 if __name__ == "__main__":
